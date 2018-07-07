@@ -1,0 +1,109 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "suswagatam rajasthan",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GuideIntent",
+                    "slots": [],
+                    "samples": [
+                        "available local guide",
+                        "local guide",
+                        "nearby guide",
+                        "available guide",
+                        "guide"
+                    ]
+                },
+                {
+                    "name": "PlacesIntent",
+                    "slots": [],
+                    "samples": [
+                        "places in india",
+                        "visiting place in india",
+                        "visiting place",
+                        "nearby visiting place",
+                        "nearby place",
+                        "place"
+                    ]
+                },
+                {
+                    "name": "PlaceDescIntent",
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "Lake Pichola",
+                                "Jal Mahal",
+                                "Ranthambore National Park",
+                                "Jantar Mantar",
+                                "Mehrangarh",
+                                "Udaipur City Palace",
+                                "Jaipur City Palace",
+                                "Hawa Mahal",
+                                "Amer Fort"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "tell me more about {place}",
+                        "famous of {place}",
+                        "tell me about {place}"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "PlaceDescIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "place",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.289681475154.649530773458"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.289681475154.649530773458",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please tell me place"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry didn't got which place you said. please tell me again"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Tell me place for description"
+                    }
+                ]
+            }
+        ]
+    }
+}
