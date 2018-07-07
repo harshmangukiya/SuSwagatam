@@ -1,4 +1,4 @@
-# SuSwagatam
+# SuSwagatam - The complete Tourist Guide
 We have made an all in one platform for voice-based tourist guide, their security, local items store, local guide finder, emergency system for them, local hotel, food, events, festival and many more.
 "SuSwagatam" contains seven modules
 1) “Hamrahi”- It is Multi-language Voice base Tour Guide. It supports languages like English, Hindi, French, German, Chianese and many other languages. It is built with artificial intelligence and integrated using Google Home and Amazon Alexa
